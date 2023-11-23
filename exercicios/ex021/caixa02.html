@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        main {
+            background-color: #dbdbdb;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+
+        nav {
+            background-color: #3F88C5;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.236);
+        }
+
+        /*
+        ordem do box-shadow: 
+            deslocamento horizontal;
+            vertical;
+            blur;
+            spreed;
+            color;
+            inset;
+            outset;
+        */
+
+        nav > a {
+            color: white;
+            margin: 10px;
+            text-decoration: underline;
+            font-weight: bold;
+            display: inline;
+        }
+
+        a:hover {
+            color: #F49D37;
+        }
+
+        footer > aside {
+            background-color: #140F2D;
+            text-align: center;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 4px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        article > aside {
+            background-color: rgb(233, 233, 233);
+            font-family: 'Times New Roman', Times, serif;;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Assuntos mais visitados</h2>
+            <ul>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Alimentação</a></li>
+                <li><a href="#">Natureza</a></li>
+            </ul>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odio perspiciatis officiis modi voluptate amet voluptas iusto. Exercitationem, aperiam! Sapiente dolorum, aliquid dolorem molestiae nihil cupiditate vero explicabo quibusdam velit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit excepturi unde numquam deleniti eius non, nam nesciunt iste perferendis, aliquam doloribus omnis quidem architecto, vitae aut rerum cum porro nobis.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus sit, doloribus quibusdam commodi, aspernatur odio minima vero, consectetur est veniam ratione officiis sed? Error libero quidem praesentium illo perspiciatis?</p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse eos perferendis praesentium natus doloribus sit, dolores ex alias! Ipsum, officiis aperiam debitis quisquam error voluptates veniam est necessitatibus hic quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur iusto commodi voluptate assumenda, quisquam sit eum officiis aut molestiae. Doloremque unde, iure nulla voluptas pariatur aliquam consequatur totam qui?</p>
+                <aside>Artigo escrito por Moutts</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <aside>Desenvolvido por BHB</aside>
+    </footer>
+</body>
+</html>
